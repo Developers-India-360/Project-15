@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #000;
+  /* overflow: hidden; */
+}
+nav .drop-btn{
+  width: 400px;
+  background: #b28d3b;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0 20px;
+}
+nav .drop-btn #drop-btn{
+  margin-top: 10px;
+  float: right;
+  line-height: 50px;
+  position: relative;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+nav{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+nav .wrapper{
+  position: absolute;
+  top: 65px;
+  display: flex;
+  width: 400px;
+  overflow: hidden;
+  background: #242526;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .wrapper.show{
+  display: block;
+  display: flex;
+}
+nav .wrapper .setting-drop,
+nav .wrapper .help-drop{
+  display: none;
+}
+nav .wrapper ul{
+  list-style: none;
+  width: 400px;
+  padding: 10px;
+}
+nav .wrapper ul li{
+  line-height: 55px;
+}
+nav .wrapper ul li a{
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  align-items: center;
+  border-radius: 8px;
+}
+nav .wrapper ul li:hover a{
+  background: #3a3b3c;
+}
+
+.wrapper ul li a:hover .icon {
+background: #fed501;
+transform: rotate(360deg) scale(1.2);
+overflow: hidden;
+transition: all 0.3s ease;
+color: #cc0001;
+}
+.wrapper ul li a .icon{
+  height: 40px;
+  width: 40px;
+  margin-right: 13px;
+  background: #ffffff1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+}
+ .wrapper ul li a .icon:hover {
+  background: #fff;
+  transform: rotate(360deg);
+}
+.wrapper ul li a #fas{
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  pointer-events: none;
+}
+.wrapper .setting-drop .arrow{
+  padding-left: 10px;
+  font-size: 20px;
+  color: #b0b3b8;
+  font-weight: 500;
+  cursor: pointer;
+}
+.wrapper .setting-drop .arrow #arrowl{
+  margin-right: 15px;
+}
+.wrapper .help-drop .arrow{
+  padding-left: 10px;
+  font-size: 20px;
+  color: #b0b3b8;
+  font-weight: 500;
+  cursor: pointer;
+}
+.wrapper .help-drop .arrow #arrowl{
+  margin-right: 15px;
+}
